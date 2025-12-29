@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="coi-serviceworker.js"></script>
+<script src="https://unpkg.com/@ffmpeg/ffmpeg@0.10.1/dist/ffmpeg.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="controls">
+<div class="main-bar">
+<input type="text" id="i" placeholder="0-9, A-D, *, #">
+<button id="b" onclick="x()">generate</button>
+</div>
+<div class="view-bar" id="s">ready</div>
+<div class="adv-grid" id="g" style="display:none">
+<a id="d">download</a>
+</div>
+</div>
+</body>
+</html>
