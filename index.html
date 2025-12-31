@@ -2,19 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DTMF Generator</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
 <body>
 <div class="controls">
-<div class="main-bar">
-<input type="text" id="i" placeholder="0-9, A-D, *, #">
-<button id="b" onclick="x()">generate</button>
-</div>
-<div class="view-bar" id="s">ready</div>
-<div class="adv-grid" id="g" style="display:none">
-<a id="d">download</a>
-</div>
+    <div class="main-bar">
+        <input type="text" id="i" placeholder="ENTER CODE (0-9, A-D, *, #)">
+        <button id="b" onclick="x()">Generate</button>
+    </div>
+    <div class="view-bar" id="s">Ready</div>
+    <div class="adv-grid" id="g" style="display:none">
+        <a id="d">Download Audio</a>
+    </div>
 </div>
 </body>
 </html>

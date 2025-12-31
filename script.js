@@ -17,7 +17,7 @@ window.x = async () => {
     if (!t) return;
     b.disabled = true;
     g.style.display = 'none';
-    s.innerText = 'generating...';
+    s.innerText = 'Processing sequence...';
     const c = new OfflineAudioContext(1, 44100 * t.length * 0.4, 44100);
     let o = 0;
     for (let k of t) {
@@ -50,8 +50,8 @@ window.x = async () => {
     const u = URL.createObjectURL(new Blob([v.buffer], { type: 'audio/wav' }));
     d.href = u;
     d.download = 'dtmf.wav';
-    d.innerText = 'download dtmf.wav';
+    d.innerText = 'Download .WAV';
     g.style.display = 'grid';
-    s.innerText = 'done';
+    s.innerText = 'Sequence Generated';
     b.disabled = false;
 };
